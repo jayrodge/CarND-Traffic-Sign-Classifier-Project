@@ -50,7 +50,7 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a bar chart showing how the data is scattered in training set.
 
 ![alt text][image1]
 
@@ -62,20 +62,10 @@ As a first step, I decided to convert the images to grayscale because results we
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
+![Before][image2]
+![After][image3]
 
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
-
+As a last step, I normalized the image data because the model will able to learn the features better as compared to Non Normalized image.
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
