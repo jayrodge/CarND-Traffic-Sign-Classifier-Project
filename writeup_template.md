@@ -153,24 +153,72 @@ Here are the results of the prediction:
 | Turn left ahead | 34 'Turn left ahead' |
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 6 of the 6 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 92.9%
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+For the first image, the model is relatively sure that this is a speed limit 30km/h sign (probability of 0.96), and The top five soft max probabilities were
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
+| Prediction        	|     Probability 	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
+| Speed limit (30km/h) |   0.96446 |
+| Speed limit (60km/h) |   0.03542 |
+| Dangerous curve to the left |   0.00007 |
+| Speed limit (50km/h) |   0.00005 |
+| End of all speed and passing limits |   0.00000 |
 
 
 
+
+For the second image, the model correctly predicts, its a Go straight or right sign
+
+| Prediction        	|     Probability 	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Go straight or right |   1.00000 |
+| Speed limit (30km/h) |   0.00000 |
+| Speed limit (20km/h) |   0.00000 |
+| Speed limit (70km/h) |   0.00000 |
+| Bicycles crossing |   0.00000 |
+
+For the third image, the model correctly predicts, its a No Entry sign
+
+| Prediction        	|     Probability 	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| No entry |   1.00000 |
+| Priority road |   0.00000 |
+| No vehicles |   0.00000 |
+| End of all speed and passing limits |   0.00000 |
+| Turn left ahead |   0.00000 |
+
+
+For the fourth image , the model correctly predicts, its a Yield 
+
+| Prediction        	|     Probability 	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Yield |   1.00000 |
+| No vehicles |   0.00000 |
+| Keep right |   0.00000 |
+| Ahead only |   0.00000 |
+| Speed limit (70km/h) |   0.00000 |
+
+
+For the fifth image, the model correctly predicts, its a Right-of-way at the next intersection
+
+| Prediction        	|     Probability 	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Right-of-way at the next intersection |   1.00000 |
+| Beware of ice/snow |   0.00000 |
+| Double curve |   0.00000 |
+| Roundabout mandatory |   0.00000 |
+| Pedestrians |   0.00000 |
+
+
+For the sixth image, the model correctly predicts, its a Turn left ahead
+
+| Prediction        	|     Probability 	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Turn left ahead |   0.87606 |
+| End of speed limit (80km/h) |   0.12230 |
+| End of all speed and passing limits |   0.00132 |
+| Beware of ice/snow |   0.00026 |
+| Keep right |   0.00004 |
