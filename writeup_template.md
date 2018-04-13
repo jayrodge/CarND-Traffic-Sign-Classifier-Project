@@ -128,7 +128,7 @@ Then, I increased the epoch to 40, and reduced the learning rate from 0.0001 to 
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are six German traffic signs that I found on the web:
 <p align="center">
   <img width="100" height="100" src='./signs/1.png'>
   <img width="100" height="100" src='./signs/2.png'>
@@ -145,11 +145,12 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Speed limit (30km/h)     		| 1 'Speed limit (30km/h)'  | 
+| Go straight or right    			| 36 'Go straight or right'	|
+| No entry				| 17 'No entry'										|
+| Yield      		| 13 'Yield'					 				|
+| Right-of-way at the next intersection			| 11 'Right-of-way at the next intersection'     							|
+| Turn left ahead | 34 'Turn left ahead' |
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
