@@ -2,7 +2,6 @@
 
 ## Writeup
 ---
-
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
@@ -16,14 +15,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./Images/graph.jpg "Visualization"
-[image2]: ./Images/c.jpg "Random Image"
-[image3]: ./Images/g.jpg "Grayscale"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image1]: ./Images/graph.png "Visualization"
+[image2]: ./Images/c.png "Random Image"
+[image3]: ./Images/g.png "Grayscale"
+[image4]: ./signs/1.png "Traffic Sign 1"
+[image5]: ./signs/2.png "Traffic Sign 2"
+[image6]: ./signs/3.png "Traffic Sign 3"
+[image7]: ./signs/4.png "Traffic Sign 4"
+[image8]: ./signs/5.png "Traffic Sign 5"
+[image9]: ./signs/6.png "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -58,7 +58,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-As a first step, I decided to convert the images to grayscale because results were better and it is sort of normalisation
+As a first step, I decided to convert the images to grayscale because results were better and it is sort of normalisation.
 
 Here is an example of a traffic sign image before and after grayscaling.
 
@@ -120,20 +120,11 @@ My final model results were:
 * validation set accuracy of 94.8
 * test set accuracy of 92.9
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
-
-### Test a Model on New Images
+I used the LeNet architecture as it was taught in LeNet Lab and worked well with MNIST data
+Initially, the accuracy was not good, and also overfiting.
+I added a convolution layer in the existing LeNet architecture from LeNet Lab, and also added Dropout after the fully connected layer which improved the accuracy of the model.
+Then, I increased the epoch to 40, and reduced the learning rate from 0.0001 to 0.001 which made significant improvements in the model.signsest a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
