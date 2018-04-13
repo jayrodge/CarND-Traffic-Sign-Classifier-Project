@@ -130,7 +130,7 @@ Then, I increased the epoch to 40, and reduced the learning rate from 0.0001 to 
 
 Here are five German traffic signs that I found on the web:
 <p align="center">
-  <img width="100" height="100" src=image4>
+  <img width="100" height="100" src=[image4]>
 </p>
 [//]: <>![alt text][image4] ![alt text][image5] ![alt text][image6] 
 [//]: <>![alt text][image7] ![alt text][image8]
