@@ -127,7 +127,8 @@ Here are six German traffic signs that I found on the web:
   <img width="100" height="100" src='./signs/5.png'>
   <img width="100" height="100" src='./signs/6.png'>
  </p>
-
+ 
+The first and the fourth image, when closely watched, it might be difficult to classify because beacuse of the unneccessary information like the watermark in the images. Also, It might be difficult for this model to correctly classify the images with because of poor lighting conditions, fog and some objects like birds overlapping the traffic signs
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
